@@ -1,5 +1,11 @@
 import React from 'react';
+import Header from '../components/Header';
 
 export default function ApplyPage() {
-  return <div>apply</div>;
+  return (
+    <div>
+      <Header />
+      apply
+    </div>
+  );
 }

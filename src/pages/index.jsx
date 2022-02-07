@@ -1,0 +1,11 @@
+export { default as Main } from './MainPage';
+export { default as About } from './AboutPage';
+export { default as Apply } from './ApplyPage';
+export { default as Board } from './BoardPage';
+export { default as Contact } from './ContactPage';
+export { default as Product } from './ProductPage';
+export { default as Mypage } from './MyPage';
+export { default as Register } from './RegisterPage';
+export { default as Write } from './WritePage';
+export { default as Login } from './LoginPage';
+export { default as Project } from './ProjectPage';

@@ -9,6 +9,7 @@ import {
   Register,
   Login,
   Project,
+  Apply,
 } from './pages';
 import './App.css';
 
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/product" component={Product} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/register" component={Register} />
+        <Route exact path="/apply" component={Apply} />
       </Switch>
     </Router>
   );

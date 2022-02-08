@@ -16,25 +16,25 @@ export default function Header() {
               <Link href="/about">About</Link>
             </MenuLogo>
             <MenuLogo>
-              <Link href="/about">About</Link>
+              <Link href="/project">Project</Link>
             </MenuLogo>
             <MenuLogo>
-              <Link href="/about">About</Link>
+              <Link href="/board">Board</Link>
             </MenuLogo>
             <MenuLogo>
-              <Link href="/about">About</Link>
+              <Link href="/apply">Apply</Link>
             </MenuLogo>
             <MenuLogo>
-              <Link href="/about">About</Link>
+              <Link href="/product">Product</Link>
             </MenuLogo>
             <MenuLogo>
-              <Link href="/about">About</Link>
+              <Link href="/contact">Contact</Link>
             </MenuLogo>
           </MenuBlock>
           <SignBlock>
             <Link href="/login">login</Link>
             <SignLogo>
-              <Link href="/signup">sign up</Link>
+              <Link href="/register">sign up</Link>
             </SignLogo>
           </SignBlock>
         </DesktopHeader>
@@ -53,6 +53,7 @@ const HeaderBlock = styled.div`
 
 const HeaderWrapper = styled.div`
   position: relative;
+  background-color: white;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 `;
 
@@ -63,13 +64,12 @@ const DesktopHeader = styled.div`
   align-items: center;
   height: 4rem;
   width: 100%;
-  color: white;
 `;
 
 const LogoBlock = styled.div`
   display: flex;
   align-items: center;
-  padding-left: 1.25rem;
+  padding-left: 1rem;
 `;
 
 const Link = styled.a`
@@ -95,14 +95,14 @@ const MenuLogo = styled.h1`
   font-weight: 600;
   color: black;
   align-items: center;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 `;
 
 const SignBlock = styled.div`
   display: flex;
   align-items: center;
-  padding-right: 1.25rem;
+  padding-right: 1rem;
 `;
 
 const SignLogo = styled.h1`

@@ -44,7 +44,7 @@ export default function Header() {
 }
 
 const HeaderBlock = styled.div`
-  position: fixed;
+  position: relative;
   left: 0px;
   right: 0px;
   top: 0px;

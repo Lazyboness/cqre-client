@@ -258,7 +258,7 @@ const ExamSection = styled.div`
 `;
 
 const ExamLogo = styled.span`
-  width: 95px;
+  width: 110px;
   height: 33px;
   font-family: PretendardVariable;
   font-size: 28px;
@@ -279,7 +279,7 @@ const ActivityFirstSection = styled.div`
 `;
 
 const ActivityFirstLogo = styled.div`
-  width: 116px;
+  width: 135px;
   height: 33px;
   font-family: PretendardVariable;
   font-size: 28px;

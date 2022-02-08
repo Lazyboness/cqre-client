@@ -1,5 +1,11 @@
 import React from 'react';
+import Header from '../components/Header';
 
 export default function ProductPage() {
-  return <div>product</div>;
+  return (
+    <div>
+      <Header />
+      product
+    </div>
+  );
 }

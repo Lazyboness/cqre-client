@@ -42,7 +42,7 @@ const Section = styled.div`
   display:flex;
   width: 100%;
   height: 100%;
-  padding: 12%;
+  padding: 12% 3%;
   box-sizing:border-box;
   justify-content:center;
   box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
@@ -69,6 +69,7 @@ font-size:40px;
 const SectionTextLow = styled.div`
 font-size:25px;
 margin-top:50px;
+width:560px;
 @media screen and (max-width:1440px){
   font-size:22px;
 }

@@ -3,108 +3,73 @@ import styled from 'styled-components';
 
 export default function Header() {
   return (
-    <Base>
-      <Navigation>
-        <MenuListWrapper>
-          <MenuList>
-            <LeftMenu>
-              <Link href="/">
-                <TextLogo>CQRE</TextLogo>
-              </Link>
-            </LeftMenu>
-            <MiddleMenuList>
-              <MiddleMenu>
-                <Link href="/about">About</Link>
-              </MiddleMenu>
-              <MiddleMenu>
-                <Link href="/project">Project</Link>
-              </MiddleMenu>
-              <MiddleMenu>
-                <Link href="/board">Board</Link>
-              </MiddleMenu>
-              <MiddleMenu>
-                <Link href="/apply">Apply</Link>
-              </MiddleMenu>
-              <MiddleMenu>
-                <Link href="/product">Product</Link>
-              </MiddleMenu>
-              <MiddleMenu>
-                <Link href="/contact">Contact</Link>
-              </MiddleMenu>
-            </MiddleMenuList>
-            <RightMenuList>
-              <RightMenu>
-                <Link href="/login">login</Link>
-              </RightMenu>
-              <RightMenu>
-                <Link href="/signup">sign up</Link>
-              </RightMenu>
-            </RightMenuList>
-          </MenuList>
-        </MenuListWrapper>
-      </Navigation>
-    </Base>
+    <HeaderBlock>
+      <HeaderWrapper>
+        <DesktopHeader>
+          <LogoBlock>
+            <Link href="/">
+              <TextLogo>CQRE</TextLogo>
+            </Link>
+          </LogoBlock>
+          <MenuBlock>
+            <MenuLogo>
+              <Link href="/about">About</Link>
+            </MenuLogo>
+            <MenuLogo>
+              <Link href="/about">About</Link>
+            </MenuLogo>
+            <MenuLogo>
+              <Link href="/about">About</Link>
+            </MenuLogo>
+            <MenuLogo>
+              <Link href="/about">About</Link>
+            </MenuLogo>
+            <MenuLogo>
+              <Link href="/about">About</Link>
+            </MenuLogo>
+            <MenuLogo>
+              <Link href="/about">About</Link>
+            </MenuLogo>
+          </MenuBlock>
+          <SignBlock>
+            <Link href="/login">login</Link>
+            <SignLogo>
+              <Link href="/signup">sign up</Link>
+            </SignLogo>
+          </SignBlock>
+        </DesktopHeader>
+      </HeaderWrapper>
+    </HeaderBlock>
   );
 }
 
-const Base = styled.header`
-  width: 100%;
-  margin: 0 auto;
-  height: 62px;
+const HeaderBlock = styled.div`
   position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  text-align: center;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  left: 0px;
+  right: 0px;
+  top: 0px;
   z-index: 10;
 `;
 
-const Navigation = styled.nav`
-  margin: 0 auto;
+const HeaderWrapper = styled.div`
+  position: relative;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 `;
 
-const MenuListWrapper = styled.div``;
-
-const MenuList = styled.ul`
-  list-style: none;
-  padding: 0;
-  margin: 0;
+const DesktopHeader = styled.div`
+  position: relative;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  color: white;
 `;
 
-const LeftMenu = styled.li`
+const LogoBlock = styled.div`
   display: flex;
   align-items: center;
-  height: 62px;
-  flex-shrink: 0;
-  padding: 0 0 0 3vw;
-`;
-
-const MiddleMenuList = styled.li`
-  display: flex;
-  align-items: center;
-  height: 62px;
-  flex-shrink: 0;
-  padding: 0 21vw 0 23vw;
-`;
-
-const MiddleMenu = styled.li`
-  font-weight: 500;
-  padding: 0 2vw 0 2vw;
-`;
-
-const RightMenuList = styled.li`
-  display: flex;
-  align-items: center;
-  height: 62px;
-  flex-shrink: 0;
-  padding: 0 3vw 0 0;
-`;
-
-const RightMenu = styled.li`
-  font-weight: 300;
-  padding: 0 0 0 1vw;
+  padding-left: 1.25rem;
 `;
 
 const Link = styled.a`
@@ -116,4 +81,33 @@ const TextLogo = styled.h1`
   font-size: 24px;
   font-weight: 700;
   color: black;
+`;
+
+const MenuBlock = styled.div`
+  margin-left: 20vw;
+  margin-right: 20vw;
+  display: flex;
+  position: relative;
+`;
+
+const MenuLogo = styled.h1`
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  align-items: center;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+`;
+
+const SignBlock = styled.div`
+  display: flex;
+  align-items: center;
+  padding-right: 1.25rem;
+`;
+
+const SignLogo = styled.h1`
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
+  margin-left: 1rem;
 `;

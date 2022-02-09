@@ -196,12 +196,13 @@ const IntroduceSection = styled.div`
 const IntroduceLogo = styled.h1`
   font-size: 56px;
   font-weight: 600;
-  font-family: Pretendard-Extrabold;
+  font-family: Pretendard-Semibold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: -1.12px;
   margin-block-start: 0;
+  margin-block-end: 0.3em;
 `;
 
 const Explain = styled.h1`
@@ -226,7 +227,7 @@ const PointSection = styled.div`
 const PointLogo = styled.h1`
   font-size: 56px;
   font-weight: 600;
-  font-family: Pretendard-Extrabold;
+  font-family: Pretendard-SemiBold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -254,7 +255,7 @@ const PointExplainSection = styled.div`
 `;
 
 const PointExplainTitle = styled.h1`
-  font-family: Pretendard-ExtraBold;
+  font-family: Pretendard-SemiBold;
   font-size: 36px;
   font-weight: 500;
   font-stretch: normal;
@@ -263,7 +264,7 @@ const PointExplainTitle = styled.h1`
   letter-spacing: -0.72px;
   text-align: left;
   margin-block-start: 0.1em;
-  margin-block-end: 0.1em;
+  margin-block-end: 0em;
   color: #000;
 `;
 
@@ -291,7 +292,7 @@ const ActivitySection = styled.div`
 const ActivityLogo = styled.h1`
   font-size: 56px;
   font-weight: 600;
-  font-family: Pretendard-Extrabold;
+  font-family: Pretendard-SemiBold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -309,7 +310,7 @@ const ActivityTitleSection = styled.div`
 `;
 
 const ActivityTitleNewbie = styled.div`
-  font-family: Pretendard-Regular;
+  font-family: Pretendard-SemiBold;
   font-size: 40px;
   font-weight: 600;
   font-stretch: normal;
@@ -369,7 +370,7 @@ const ActivityFirstSection = styled.div`
 const ActivityFirstLogo = styled.div`
   width: 135px;
   height: 33px;
-  font-family: Pretendard-Regular;
+  font-family: Pretendard-SemiBold;
   font-size: 28px;
   font-weight: 600;
   font-stretch: normal;

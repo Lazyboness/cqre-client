@@ -206,7 +206,7 @@ const IntroduceLogo = styled.h1`
 
 const Explain = styled.h1`
   font-family: Pretendard-Regular;
-  font-size: 32px;
+  font-size: 1.5vw;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;

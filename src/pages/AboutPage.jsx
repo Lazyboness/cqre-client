@@ -24,6 +24,8 @@ export default function AboutPage() {
             CQRE에서 개발자, 디자이너와 함께 실무 협업 서비스 구현을 경험하고
             자신을 성장시키세요 !
           </Explain>
+          <br />
+          <br />
         </IntroduceSection>
       </IntroduceSectionWrapper>
       <PointSection>

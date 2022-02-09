@@ -93,6 +93,7 @@ const MenuBlock = styled.div`
 const MenuLogo = styled.h1`
   font-size: 1rem;
   font-weight: 600;
+  font-family: Pretendard-ExtraBold;
   color: black;
   align-items: center;
   margin-left: 1rem;

@@ -9,6 +9,9 @@ import github from "../assets/img/github.svg"
 
 
 export default function MainPage() {
+
+
+
   return (
     <>
     <Header />

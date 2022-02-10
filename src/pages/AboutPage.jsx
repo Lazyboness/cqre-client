@@ -222,8 +222,8 @@ const Explain = styled.h1`
 const PointSection = styled.div`
   padding-top: 3rem;
   padding-bottom: 3rem;
-  padding-left: 20vw;
-  padding-right: 20vw;
+  padding-left: 17vw;
+  padding-right: 17vw;
 `;
 
 const PointLogo = styled.h1`
@@ -271,7 +271,7 @@ const PointExplainTitle = styled.h1`
 `;
 
 const PointExplain = styled.h1`
-  font-family: PretendardVariable;
+  font-family: Pretendard-Regular;
   font-size: 1.45vw;
   font-weight: normal;
   font-stretch: normal;
@@ -351,7 +351,7 @@ const ExamSection = styled.div`
 const ExamLogo = styled.span`
   width: 110px;
   height: 33px;
-  font-family: PretendardVariable;
+  font-family: Pretendard-SemiBold;
   font-size: 28px;
   font-weight: 600;
   font-stretch: normal;

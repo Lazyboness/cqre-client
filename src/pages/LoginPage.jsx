@@ -1,8 +1,25 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Header from '../components/Header';
 import styled from 'styled-components';
 
 export default function LoginPage() {
+  const [id, setId] = useState('');
+  const [password, setPassword] = useState('');
+
+  const onChangeId = (e) => {
+    setId(e.target.value);
+  }
+
+  const onChangePassword = (e) => {
+    setPassword(e.target.value);
+  }
+  const onLogin = (e) => {
+    e.preventDefault();
+    if(!id || !password) {
+      alert("값을 모두 입력해주세요");
+      return
+    }
+  }
   return (
     <>
       <Header/>
@@ -10,9 +27,21 @@ export default function LoginPage() {
         <LoginContainer>
           <MainText>CORE</MainText>
           <form method="POST">
-          <IdForm placeholder='아이디 입력' id="id" name="id" type="text"></IdForm>
-          <IdForm placeholder='비밀번호 입력' id="password" name="password" type="password"/>
-          <SubmitButton type="submit">로그인</SubmitButton>
+          <IdForm placeholder='아이디 입력' 
+          id="id" 
+          name="id"
+          value={id}
+          type="text"
+          onChange={onChangeId}
+          ></IdForm>
+          <IdForm placeholder='비밀번호 입력' 
+          id="password" 
+          name="password" 
+          type="password"
+          value={password}
+          onChange={onChangePassword}
+          />
+          <SubmitButton type="submit" onClick={onLogin}>로그인</SubmitButton>
           </form>
           <LowBarContainer>
             <LowBar href="#">아이디찾기</LowBar>

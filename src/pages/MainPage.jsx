@@ -6,6 +6,8 @@ import email from "../assets/img/email.svg"
 import facebook from "../assets/img/facebook.svg"
 import github from "../assets/img/github.svg"
 
+
+
 export default function MainPage() {
   return (
     <>
@@ -18,7 +20,7 @@ export default function MainPage() {
           <SectionTextHigh>Core</SectionTextHigh>
           <SectionTextLow >안녕하세요 순천향대학교 프로젝트 동아리 CQRE 입니다.</SectionTextLow>
           <AboutButton>
-            <a href="/about" style={{color:"#3d72af", width: "100%", display:"flex", justifyContent:"center", fontSize:"20px", textDecoration:"none" }}>Go to About</a>
+            <a href="/about" id="about" style={{color:"#3d72af", width: "100%", display:"flex", justifyContent:"center", fontSize:"20px", textDecoration:"none" }}>Go to About</a>
           </AboutButton>
         </SectionText>
       </SectionContainer>
@@ -86,6 +88,10 @@ margin-top: 50px;
 display:flex;
 align-items:center;
 justify-content:center;
+:hover{
+  width: 160px;
+  height: 45px;
+}
 `
 
 const Footer = styled.div`

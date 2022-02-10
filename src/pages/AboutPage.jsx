@@ -2,6 +2,9 @@ import React from 'react';
 import Header from '../components/Header';
 import styled from 'styled-components';
 import Study from '../assets/img/about_study.png';
+import Project from '../assets/img/about_project.png';
+import Education from '../assets/img/about_education.png';
+import Communication from '../assets/img/about_communication.png';
 
 export default function AboutPage() {
   return (
@@ -21,10 +24,50 @@ export default function AboutPage() {
             CQRE에서 개발자, 디자이너와 함께 실무 협업 서비스 구현을 경험하고
             자신을 성장시키세요 !
           </Explain>
+          <br />
+          <br />
         </IntroduceSection>
       </IntroduceSectionWrapper>
       <PointSection>
         <PointLogo>Point</PointLogo>
+        <PointImg src={Project} alt="Project" />
+        <PointImg src={Education} alt="Education" />
+        <PointImg src={Communication} alt="Communication" />
+        <PointExplainSectionWrapper>
+          <PointExplainSection>
+            <PointExplainTitle>프로젝트</PointExplainTitle>
+            <br />
+            <PointExplain>
+              개발자와 디자이너가 팀을 이루어
+              <br />
+              1년동안 서비스 기획, 디자인, 개발,
+              <br />
+              런칭까지의 과정을 경험합니다.
+            </PointExplain>
+          </PointExplainSection>
+          <PointExplainSection>
+            <PointExplainTitle>기초교육</PointExplainTitle>
+            <br />
+            <PointExplain>
+              개발을 처음 접하는 동아리원을
+              <br />
+              위하여 뉴비팀을 운영하며
+              <br />
+              교육 커리큘럼을 제공합니다.
+            </PointExplain>
+          </PointExplainSection>
+          <PointExplainSection>
+            <PointExplainTitle>커뮤니케이션</PointExplainTitle>
+            <br />
+            <PointExplain>
+              정기적으로 전체세미나를 진행하여
+              <br />
+              각 팀의 상황을 보고하고
+              <br />
+              피드백하는 과정을 진행합니다.
+            </PointExplain>
+          </PointExplainSection>
+        </PointExplainSectionWrapper>
       </PointSection>
       <ActivitySection>
         <ActivityLogo>Activity</ActivityLogo>
@@ -155,17 +198,18 @@ const IntroduceSection = styled.div`
 const IntroduceLogo = styled.h1`
   font-size: 56px;
   font-weight: 600;
-  font-family: PretendardVariable;
+  font-family: Pretendard-Semibold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: -1.12px;
   margin-block-start: 0;
+  margin-block-end: 0.3em;
 `;
 
 const Explain = styled.h1`
-  font-family: PretendaraVariable;
-  font-size: 32px;
+  font-family: Pretendard-Regular;
+  font-size: 1.5vw;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -185,12 +229,59 @@ const PointSection = styled.div`
 const PointLogo = styled.h1`
   font-size: 56px;
   font-weight: 600;
-  font-family: PretendardVariable;
+  font-family: Pretendard-SemiBold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: -1.12px;
   margin-block-start: 0;
+  margin-block-end: 0.6em;
+`;
+
+const PointImg = styled.img`
+  width: 20vw;
+  height: 16vw;
+  object-fit: contain;
+  border-radius: 0;
+`;
+
+const PointExplainSectionWrapper = styled.div`
+  display: flex;
+  position: relative;
+`;
+
+const PointExplainSection = styled.div`
+  width: 20vw;
+  height: 10vw;
+  padding-left: 0.5vw;
+`;
+
+const PointExplainTitle = styled.h1`
+  font-family: Pretendard-SemiBold;
+  font-size: 36px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.72px;
+  text-align: left;
+  margin-block-start: 0.1em;
+  margin-block-end: 0em;
+  color: #000;
+`;
+
+const PointExplain = styled.h1`
+  font-family: PretendardVariable;
+  font-size: 1.45vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  text-align: left;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: #000;
 `;
 
 const ActivitySection = styled.div`
@@ -203,7 +294,7 @@ const ActivitySection = styled.div`
 const ActivityLogo = styled.h1`
   font-size: 56px;
   font-weight: 600;
-  font-family: PretendardVariable;
+  font-family: Pretendard-SemiBold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -221,22 +312,22 @@ const ActivityTitleSection = styled.div`
 `;
 
 const ActivityTitleNewbie = styled.div`
-  font-family: PretendardVariable;
+  font-family: Pretendard-SemiBold;
   font-size: 40px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.8px;
-  width: 35vw;
+  width: 25rem;
   height: 47px;
-  margin-right: 0;
+  margin-right: 10rem;
   margin-top: 29px;
   text-align: left;
 `;
 
 const ActivityTitleProject = styled.div`
-  font-family: PretendardVariable;
+  font-family: Pretendard-Regular;
   font-size: 40px;
   font-weight: 600;
   font-stretch: normal;
@@ -258,7 +349,7 @@ const ExamSection = styled.div`
 `;
 
 const ExamLogo = styled.span`
-  width: 95px;
+  width: 110px;
   height: 33px;
   font-family: PretendardVariable;
   font-size: 28px;
@@ -279,9 +370,9 @@ const ActivityFirstSection = styled.div`
 `;
 
 const ActivityFirstLogo = styled.div`
-  width: 116px;
+  width: 135px;
   height: 33px;
-  font-family: PretendardVariable;
+  font-family: Pretendard-SemiBold;
   font-size: 28px;
   font-weight: 600;
   font-stretch: normal;
@@ -308,6 +399,7 @@ const ActivityExplainLogo = styled.div`
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
+  font-family: Pretendard-Regular;
   line-height: normal;
   letter-spacing: -0.56px;
   text-align: left;

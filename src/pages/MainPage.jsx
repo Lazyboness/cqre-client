@@ -45,8 +45,15 @@ function App() {
       <Footer>
         <FooterContainer>
           <FooterIcon src={email} alt="email" />
-          <FooterIcon src={github} alt="github" />
-          <FooterIcon src={facebook} alt="facebook" />
+          <a href="https://github.com/SCH-CQRE" style={{ margin: "0 auto" }}>
+            <FooterIcon src={github} alt="github" />
+          </a>
+          <a
+            href="https://www.facebook.com/CQRE-110543228235787"
+            style={{ margin: "0 auto" }}
+          >
+            <FooterIcon src={facebook} alt="facebook" />
+          </a>
         </FooterContainer>
         <FooterText>
           Copyright CQRE Since 2022. All rights reserved CQRE

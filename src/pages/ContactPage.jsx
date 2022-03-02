@@ -27,10 +27,14 @@ export default function ContactPage() {
           <ContactSNSImage src={email} alt="email" />
         </ContactSNSFirstCircle>
         <ContactSNSCircle>
-          <ContactSNSImage src={github} alt="github" />
+          <a href="https://github.com/SCH-CQRE">
+            <ContactSNSImage src={github} alt="github" />
+          </a>
         </ContactSNSCircle>
         <ContactSNSCircle>
-          <ContactSNSImage src={facebook} alt="facebook" />
+          <a href="https://www.facebook.com/CQRE-110543228235787">
+            <ContactSNSImage src={facebook} alt="facebook" />
+          </a>
         </ContactSNSCircle>
       </ContactSNSCircleSection>
       <BoardSection>
@@ -41,10 +45,10 @@ export default function ContactPage() {
         <DsyooImg src={dsyou} alt="dsyou" />
       </ImgSection>
       <BoardNameSection>
-        <BoardLeftName>김현수 | 2022 회장</BoardLeftName>
-        <BoardRightName>유동선 | 2022 부회장</BoardRightName>
+        <BoardLeftName>19 김현수 | 2022 회장</BoardLeftName>
+        <BoardRightName>18 유동선 | 2022 부회장</BoardRightName>
       </BoardNameSection>
-      <div style={{ display: "flex" }}>
+      {/* <div style={{ display: "flex" }}>
         <BoardExplainSection>
           <BoardLeftExplain>
             CQRE회장 김현수입니다.
@@ -55,7 +59,7 @@ export default function ContactPage() {
             <br />잘 부탁드립니다.
           </BoardRightExplain>
         </BoardExplainSection>
-      </div>
+      </div> */}
     </>
   );
 }
@@ -204,15 +208,14 @@ const DsyooImg = styled.img`
 `;
 
 const BoardNameSection = styled.div`
-  padding-left: 22vw;
-  padding-right: 20vw;
+  padding-left: 22%;
   text-align: center;
   display: flex;
 `;
 
 const BoardLeftName = styled.h1`
   font-family: Pretendard-Regular;
-  font-size: 1.25vw;
+  font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -220,12 +223,16 @@ const BoardLeftName = styled.h1`
   letter-spacing: -0.48px;
   text-align: left;
   color: #000;
-  margin-left: 14.9vw;
+  margin-left: 14.05vw;
+  @media screen and (max-width: 440px) {
+    font-size: 9px;
+    margin-left: 10.05vw;
+  }
 `;
 
 const BoardRightName = styled.h1`
   font-family: Pretendard-Regular;
-  font-size: 1.25vw;
+  font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -233,7 +240,11 @@ const BoardRightName = styled.h1`
   letter-spacing: -0.48px;
   text-align: left;
   color: #000;
-  margin-left: 10vw;
+  margin-left: 8.3vw;
+  @media screen and (max-width: 440px) {
+    font-size: 9px;
+    margin-left: 1.5vw;
+  }
 `;
 
 const BoardExplainSection = styled.div`

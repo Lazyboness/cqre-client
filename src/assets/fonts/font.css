@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Multicolore";
+  font-display: fallback;
+  src: url("./Multicolore.ttf") format("truetype"),
+    url("./Multicolore.woff") format("woff"),
+    url("./Multicolore.eot?iefix") format("embedded-opentype");
+  font-weight: 400;
+  font-style: normal;
+}

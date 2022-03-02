@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import "../assets/fonts/font.css";
 
 export default function Header() {
   return (
@@ -44,9 +45,9 @@ const DesktopHeaderBlock = styled.div`
 
 const DesktopHeaderLogoArea = styled.a`
   text-decoration: none;
-  color: black;
+  color: #112d4e;
   margin-top: 5px;
-  font-family: Pretendard-ExtraBold;
+  font-family: Multicolore;
   font-size: 30px;
   font-weight: 800;
   font-stretch: normal;
@@ -66,7 +67,6 @@ const DesktopHeaderMenuArea = styled.div`
 `;
 
 const FirstLink = styled.a`
-  margin-top: 2px;
   text-decoration: none;
   color: black;
   display: flex;
@@ -80,7 +80,6 @@ const FirstLink = styled.a`
 `;
 
 const MenuLink = styled.a`
-  margin-top: 2px;
   margin-left: 2.5vw;
   text-decoration: none;
   color: black;

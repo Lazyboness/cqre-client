@@ -17,15 +17,15 @@ export default function ApplyPage() {
         <EligibilityExplain>
           <div style={{ display: "flex" }}>
             <PurpleCircle />
+            실무 서비스 개발을 경험하고 싶은 사람
+          </div>
+          <div style={{ display: "flex" }}>
+            <PurpleCircle />
             최소 1년 이상 동아리 활동을 지속할 수 있는 사람
           </div>
           <div style={{ display: "flex" }}>
             <PurpleCircle />
-            협업 프로젝트를 경험하고 싶은 사람
-          </div>
-          <div style={{ display: "flex" }}>
-            <PurpleCircle />
-            뉴비팀일 경우 기초교육과 과제를 성실히 수행할 수 있는 사람
+            끝까지 포기하지 않을 수 있는 끈기를 가진 사람
           </div>
         </EligibilityExplain>
       </EligibilitySection>

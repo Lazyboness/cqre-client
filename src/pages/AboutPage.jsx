@@ -131,7 +131,7 @@ const Explain = styled.h1`
   margin-block-start: 0;
   margin-block-end: 0;
   @media screen and (max-width: 1379px) {
-    font-size: 16px;
+    font-size: 12px;
   }
 `;
 
@@ -165,6 +165,9 @@ const PointImgSection = styled.div`
 const PointImg = styled.img`
   width: 20vw;
   height: 25vh;
+  @media screen and (max-width: 440px) {
+    height: 10vh;
+  }
 `;
 
 const PointSubImg = styled.img`
@@ -172,6 +175,9 @@ const PointSubImg = styled.img`
   height: 24vh;
   border-radius: 15px;
   box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+  @media screen and (max-width: 440px) {
+    height: 10vh;
+  }
 `;
 
 const PointTitleSection = styled.div`
@@ -193,8 +199,8 @@ const PointLeftTitle = styled.h1`
   margin-block-end: 0;
   margin-right: 6.125vw;
   color: #000;
-  @media screen and (max-width: 1379px) {
-    font-size: 16px;
+  @media screen and (max-width: 1300px) {
+    font-size: 12px;
   }
 `;
 
@@ -212,8 +218,8 @@ const PointRightTitle = styled.h1`
   margin-block-end: 0;
   margin-left: 6.4vw;
   color: #000;
-  @media screen and (max-width: 1379px) {
-    font-size: 16px;
+  @media screen and (max-width: 1300px) {
+    font-size: 12px;
   }
 `;
 
@@ -234,8 +240,8 @@ const PointExplain = styled.h1`
   text-align: left;
   margin-block-start: 0.3em;
   color: #000;
-  @media screen and (max-width: 1379px) {
-    font-size: 12px;
+  @media screen and (max-width: 1300px) {
+    font-size: 9px;
   }
 `;
 
@@ -251,8 +257,8 @@ const PointRightExplain = styled.h1`
   text-align: left;
   margin-block-start: 0.3em;
   color: #000;
-  @media screen and (max-width: 1379px) {
-    font-size: 12px;
+  @media screen and (max-width: 1300px) {
+    font-size: 9px;
   }
 `;
 
@@ -268,8 +274,8 @@ const PointFourthExplain = styled.h1`
   text-align: left;
   margin-block-start: 0.3em;
   color: #000;
-  @media screen and (max-width: 1379px) {
-    font-size: 12px;
+  @media screen and (max-width: 1300px) {
+    font-size: 9px;
   }
 `;
 

@@ -6,7 +6,7 @@ import project from "../assets/img/about_project.png";
 import sub from "../assets/img/about_sub.png";
 import education from "../assets/img/about_education.png";
 import communication from "../assets/img/about_communication.png";
-import curriculum from "../assets/img/about_curriculum.png";
+import activity from "../assets/img/about_activity.svg";
 
 export default function AboutPage() {
   return (
@@ -70,7 +70,7 @@ export default function AboutPage() {
       </PointSection>
       <ActivitySection>
         <ActivityLogo>Activity</ActivityLogo>
-        <Img src={curriculum} alt="curriculum" />
+        <Img src={activity} alt="activity" />
       </ActivitySection>
       <DetailSection>
         <Detail>

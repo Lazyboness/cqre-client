@@ -40,14 +40,30 @@ export default function ContactPage() {
       <BoardSection>
         <BoardTitle>CQRE 회장단</BoardTitle>
       </BoardSection>
-      <ImgSection>
+
+      <ProfileContainer>
+        <ProfileContent>
+          <ImgSection>
+           <KhsooImg src={khsoo} alt="khsoo" />
+          </ImgSection>
+          <BoardLeftName>19 김현수 | 2022 회장</BoardLeftName>
+        </ProfileContent>
+        <ProfileContent>
+          <ImgSection>
+          <DsyooImg src={dsyou} alt="dsyou" />
+          </ImgSection>
+          <BoardRightName>18 유동선 | 2022 부회장</BoardRightName>
+        </ProfileContent>
+      </ProfileContainer>
+      
+      {/* <ImgSection>
         <KhsooImg src={khsoo} alt="khsoo" />
         <DsyooImg src={dsyou} alt="dsyou" />
       </ImgSection>
       <BoardNameSection>
         <BoardLeftName>19 김현수 | 2022 회장</BoardLeftName>
         <BoardRightName>18 유동선 | 2022 부회장</BoardRightName>
-      </BoardNameSection>
+      </BoardNameSection> */}
       {/* <div style={{ display: "flex" }}>
         <BoardExplainSection>
           <BoardLeftExplain>
@@ -60,9 +76,28 @@ export default function ContactPage() {
           </BoardRightExplain>
         </BoardExplainSection>
       </div> */}
+      <Space />
     </>
   );
 }
+
+const Space = styled.div`
+margin-bottom:100px;
+`
+
+const ProfileContainer = styled.div`
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin: 0 auto;
+width: 40%;
+justify-content:center;
+align-items:center;
+
+`
+
+const ProfileContent = styled.div`
+display:block;
+`
 
 const ContactSectionWrapper = styled.div`
   width: 100%;
@@ -108,10 +143,9 @@ const Explain = styled.h1`
 `;
 
 const ContactToCQRESection = styled.div`
-  padding-left: 20vw;
-  padding-right: 20vw;
   padding-top: 2.5rem;
   display: flex;
+  justify-content:center;
 `;
 
 const ContactToCQRESectionTitle = styled.h1`
@@ -124,21 +158,18 @@ const ContactToCQRESectionTitle = styled.h1`
   letter-spacing: -0.68px;
   text-align: center;
   margin-block-start: 0;
-  margin-left: 25.5vw;
   color: #000;
 `;
 
 const ContactSNSCircleSection = styled.div`
   padding-bottom: 0.5rem;
-  padding-left: 20vw;
-  padding-right: 20vw;
-  display: flex;
-  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 3%;
+  justify-content:center;
 `;
 
 const ContactSNSFirstCircle = styled.div`
-  margin-left: 15vw;
-  margin-right: 1vw;
   width: 9.5vw;
   height: 9.5vw;
   border-radius: 5vw;
@@ -147,8 +178,6 @@ const ContactSNSFirstCircle = styled.div`
 `;
 
 const ContactSNSCircle = styled.div`
-  margin-left: 1vw;
-  margin-right: 1vw;
   width: 9.5vw;
   height: 9.5vw;
   border-radius: 5vw;
@@ -165,10 +194,8 @@ const ContactSNSImage = styled.img`
 
 const BoardSection = styled.div`
   padding-top: 2.75rem;
-  padding-left: 22vw;
-  padding-right: 20vw;
-  text-align: center;
-  display: flex;
+  display:flex;
+  justify-content:center;
 `;
 
 const BoardTitle = styled.h1`
@@ -179,23 +206,21 @@ const BoardTitle = styled.h1`
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.68px;
-  text-align: left;
-  margin-left: 25.4vw;
   color: #6458f5;
 `;
 
 const ImgSection = styled.div`
-  padding-left: 22vw;
-  padding-right: 20vw;
-  text-align: center;
   display: flex;
+  margin: 0 auto;
 `;
 
 const KhsooImg = styled.img`
   width: 12vw;
   height: 12vw;
   border-radius: 6vw;
-  margin-left: 13.5vw;
+  display:flex;
+  margin:0 auto;
+
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 `;
 
@@ -203,8 +228,10 @@ const DsyooImg = styled.img`
   width: 12vw;
   height: 12vw;
   border-radius: 6vw;
-  margin-left: 7.7vw;
+  display:flex;
+  margin:0 auto;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+
 `;
 
 const BoardNameSection = styled.div`
@@ -221,12 +248,11 @@ const BoardLeftName = styled.h1`
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.48px;
-  text-align: left;
+  text-align: center;
   color: #000;
-  margin-left: 14.05vw;
   @media screen and (max-width: 440px) {
     font-size: 9px;
-    margin-left: 10.05vw;
+    margin-left: 1.5vw;
   }
 `;
 
@@ -238,9 +264,8 @@ const BoardRightName = styled.h1`
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.48px;
-  text-align: left;
+  text-align: center;
   color: #000;
-  margin-left: 8.3vw;
   @media screen and (max-width: 440px) {
     font-size: 9px;
     margin-left: 1.5vw;

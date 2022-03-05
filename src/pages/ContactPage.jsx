@@ -1,4 +1,5 @@
 import React from "react";
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 import Header from "../components/Header";
 import styled from "styled-components";
 import email from "../assets/img/email.svg";
@@ -7,7 +8,12 @@ import github from "../assets/img/github.svg";
 import khsoo from "../assets/img/khsoo.jpeg";
 import dsyou from "../assets/img/dsyou.jpeg";
 
+
+
 export default function ContactPage() {
+
+  const url = 'cqrecore@gmail.com';
+
   return (
     <>
       <Header />
@@ -24,7 +30,9 @@ export default function ContactPage() {
       </ContactToCQRESection>
       <ContactSNSCircleSection>
         <ContactSNSFirstCircle>
-          <ContactSNSImage src={email} alt="email" />
+        <CopyToClipboard text={url} onCopy={() => alert('메일이 복사되었습니다')} style={{cursor:"pointer"}}>
+          <ContactSNSImage src={email} alt="email" onCopy />
+          </CopyToClipboard>
         </ContactSNSFirstCircle>
         <ContactSNSCircle>
           <a href="https://github.com/SCH-CQRE">

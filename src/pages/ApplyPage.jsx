@@ -202,6 +202,9 @@ const GreyCircleLogo = styled.h1`
   text-align: left;
   margin-top: 4vw;
   margin-left: 2.5vw;
+  @media screen and (max-width: 450px) {
+    margin-left: 0.75vw;
+  }
 `;
 
 const GreyCircleAuditionLogo = styled.h1`
@@ -215,6 +218,9 @@ const GreyCircleAuditionLogo = styled.h1`
   text-align: left;
   margin-top: 4vw;
   margin-left: 3.675vw;
+  @media screen and (max-width: 450px) {
+    margin-left: 2.5vw;
+  }
 `;
 
 const GreyTriangle = styled.div`

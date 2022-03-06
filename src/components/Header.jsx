@@ -46,7 +46,6 @@ const DesktopHeaderBlock = styled.div`
 const DesktopHeaderLogoArea = styled.a`
   text-decoration: none;
   color: #112d4e;
-  margin-top: 5px;
   font-family: Multicolore;
   font-size: 30px;
   font-weight: 800;

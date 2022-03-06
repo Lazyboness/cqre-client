@@ -1,5 +1,5 @@
 import React from "react";
-import {CopyToClipboard} from 'react-copy-to-clipboard';
+import { CopyToClipboard } from "react-copy-to-clipboard";
 import Header from "../components/Header";
 import styled from "styled-components";
 import email from "../assets/img/email.svg";
@@ -8,11 +8,8 @@ import github from "../assets/img/github.svg";
 import khsoo from "../assets/img/khsoo.jpeg";
 import dsyou from "../assets/img/dsyou.jpeg";
 
-
-
 export default function ContactPage() {
-
-  const url = 'cqrecore@gmail.com';
+  const url = "cqrecore@gmail.com";
 
   return (
     <>
@@ -30,8 +27,12 @@ export default function ContactPage() {
       </ContactToCQRESection>
       <ContactSNSCircleSection>
         <ContactSNSFirstCircle>
-        <CopyToClipboard text={url} onCopy={() => alert('메일이 복사되었습니다')} style={{cursor:"pointer"}}>
-          <ContactSNSImage src={email} alt="email" onCopy />
+          <CopyToClipboard
+            text={url}
+            onCopy={() => alert("메일이 복사되었습니다")}
+            style={{ cursor: "pointer" }}
+          >
+            <ContactSNSImage src={email} alt="email" onCopy />
           </CopyToClipboard>
         </ContactSNSFirstCircle>
         <ContactSNSCircle>
@@ -52,18 +53,18 @@ export default function ContactPage() {
       <ProfileContainer>
         <ProfileContent>
           <ImgSection>
-           <KhsooImg src={khsoo} alt="khsoo" />
+            <KhsooImg src={khsoo} alt="khsoo" />
           </ImgSection>
           <BoardLeftName>19 김현수 | 2022 회장</BoardLeftName>
         </ProfileContent>
         <ProfileContent>
           <ImgSection>
-          <DsyooImg src={dsyou} alt="dsyou" />
+            <DsyooImg src={dsyou} alt="dsyou" />
           </ImgSection>
           <BoardRightName>18 유동선 | 2022 부회장</BoardRightName>
         </ProfileContent>
       </ProfileContainer>
-      
+
       {/* <ImgSection>
         <KhsooImg src={khsoo} alt="khsoo" />
         <DsyooImg src={dsyou} alt="dsyou" />
@@ -90,22 +91,21 @@ export default function ContactPage() {
 }
 
 const Space = styled.div`
-margin-bottom:100px;
-`
+  margin-bottom: 100px;
+`;
 
 const ProfileContainer = styled.div`
-display: grid;
-grid-template-columns: 1fr 1fr;
-margin: 0 auto;
-width: 40%;
-justify-content:center;
-align-items:center;
-
-`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+`;
 
 const ProfileContent = styled.div`
-display:block;
-`
+  display: block;
+`;
 
 const ContactSectionWrapper = styled.div`
   width: 100%;
@@ -153,7 +153,7 @@ const Explain = styled.h1`
 const ContactToCQRESection = styled.div`
   padding-top: 2.5rem;
   display: flex;
-  justify-content:center;
+  justify-content: center;
 `;
 
 const ContactToCQRESectionTitle = styled.h1`
@@ -174,7 +174,7 @@ const ContactSNSCircleSection = styled.div`
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 3%;
-  justify-content:center;
+  justify-content: center;
 `;
 
 const ContactSNSFirstCircle = styled.div`
@@ -202,8 +202,8 @@ const ContactSNSImage = styled.img`
 
 const BoardSection = styled.div`
   padding-top: 2.75rem;
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
 `;
 
 const BoardTitle = styled.h1`
@@ -226,8 +226,8 @@ const KhsooImg = styled.img`
   width: 12vw;
   height: 12vw;
   border-radius: 6vw;
-  display:flex;
-  margin:0 auto;
+  display: flex;
+  margin: 0 auto;
 
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 `;
@@ -236,10 +236,9 @@ const DsyooImg = styled.img`
   width: 12vw;
   height: 12vw;
   border-radius: 6vw;
-  display:flex;
-  margin:0 auto;
+  display: flex;
+  margin: 0 auto;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-
 `;
 
 const BoardNameSection = styled.div`
@@ -258,9 +257,12 @@ const BoardLeftName = styled.h1`
   letter-spacing: -0.48px;
   text-align: center;
   color: #000;
-  @media screen and (max-width: 440px) {
+  @media screen and (max-width: 560px) {
     font-size: 9px;
     margin-left: 1.5vw;
+  }
+  @media screen and (max-width: 1200px) {
+    font-size: 11px;
   }
 `;
 
@@ -274,9 +276,12 @@ const BoardRightName = styled.h1`
   letter-spacing: -0.48px;
   text-align: center;
   color: #000;
-  @media screen and (max-width: 440px) {
+  @media screen and (max-width: 560px) {
     font-size: 9px;
     margin-left: 1.5vw;
+  }
+  @media screen and (max-width: 1200px) {
+    font-size: 11px;
   }
 `;
 

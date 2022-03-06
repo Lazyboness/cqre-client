@@ -34,7 +34,11 @@ export default function AboutPage() {
         <PointLogo>Point</PointLogo>
         <PointImgSection>
           <PointImg src={project} alt="project" />
-          <PointImg src={sub} alt="sub" style={{boxShadow:'0 1.5px 3px 0 rgba(0, 0, 0, 0.16)'}} />
+          <PointImg
+            src={sub}
+            alt="sub"
+            style={{ boxShadow: "0 1.5px 3px 0 rgba(0, 0, 0, 0.16)" }}
+          />
         </PointImgSection>
         <PointTitleSection>
           <PointLeftTitle>메인 프로젝트</PointLeftTitle>
@@ -165,9 +169,9 @@ const PointImgSection = styled.div`
 const PointImg = styled.img`
   width: 33%;
   /* height: 35%; */
-  border-radius:15px;
+  border-radius: 15px;
   @media screen and (max-width: 440px) {
-    height: 10vh;
+    height: 8vh;
   }
 `;
 
@@ -190,7 +194,13 @@ const PointLeftTitle = styled.h1`
   margin-block-end: 0;
   margin-right: 6.125vw;
   color: #000;
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: 1450px) {
+    font-size: 26px;
+  }
+  @media screen and (max-width: 1150px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 900px) {
     font-size: 12px;
   }
 `;
@@ -209,7 +219,13 @@ const PointRightTitle = styled.h1`
   margin-block-end: 0;
   margin-left: 6.4vw;
   color: #000;
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: 1450px) {
+    font-size: 26px;
+  }
+  @media screen and (max-width: 1150px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 900px) {
     font-size: 12px;
   }
 `;
@@ -232,6 +248,9 @@ const PointExplain = styled.h1`
   margin-block-start: 0.3em;
   color: #000;
   @media screen and (max-width: 1300px) {
+    font-size: 13px;
+  }
+  @media screen and (max-width: 800px) {
     font-size: 9px;
   }
 `;
@@ -249,6 +268,9 @@ const PointRightExplain = styled.h1`
   margin-block-start: 0.3em;
   color: #000;
   @media screen and (max-width: 1300px) {
+    font-size: 13px;
+  }
+  @media screen and (max-width: 800px) {
     font-size: 9px;
   }
 `;
@@ -266,6 +288,9 @@ const PointFourthExplain = styled.h1`
   margin-block-start: 0.3em;
   color: #000;
   @media screen and (max-width: 1300px) {
+    font-size: 13px;
+  }
+  @media screen and (max-width: 800px) {
     font-size: 9px;
   }
 `;

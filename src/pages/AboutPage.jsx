@@ -34,7 +34,7 @@ export default function AboutPage() {
         <PointLogo>Point</PointLogo>
         <PointImgSection>
           <PointImg src={project} alt="project" />
-          <PointSubImg src={sub} alt="sub" />
+          <PointImg src={sub} alt="sub" style={{boxShadow:'0 1.5px 3px 0 rgba(0, 0, 0, 0.16)'}} />
         </PointImgSection>
         <PointTitleSection>
           <PointLeftTitle>메인 프로젝트</PointLeftTitle>
@@ -163,18 +163,9 @@ const PointImgSection = styled.div`
 `;
 
 const PointImg = styled.img`
-  width: 20vw;
-  height: 25vh;
-  @media screen and (max-width: 440px) {
-    height: 10vh;
-  }
-`;
-
-const PointSubImg = styled.img`
-  width: 19vw;
-  height: 24vh;
-  border-radius: 15px;
-  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+  width: 33%;
+  /* height: 35%; */
+  border-radius:15px;
   @media screen and (max-width: 440px) {
     height: 10vh;
   }
@@ -186,7 +177,7 @@ const PointTitleSection = styled.div`
 `;
 
 const PointLeftTitle = styled.h1`
-  font-family: Pretendard-Regular;
+  font-family: Pretendard-SemiBold;
   width: 20vw;
   font-size: 36px;
   font-weight: 500;
@@ -206,7 +197,7 @@ const PointLeftTitle = styled.h1`
 
 const PointRightTitle = styled.h1`
   width: 20vw;
-  font-family: Pretendard-Regular;
+  font-family: Pretendard-SemiBold;
   font-size: 36px;
   font-weight: 500;
   font-stretch: normal;
@@ -231,13 +222,13 @@ const PointExplainSection = styled.div`
 const PointExplain = styled.h1`
   width: 20vw;
   font-family: Pretendard-Regular;
-  font-size: 28px;
+  font-size: 17px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.56px;
-  text-align: left;
+  text-align: center;
   margin-block-start: 0.3em;
   color: #000;
   @media screen and (max-width: 1300px) {
@@ -248,13 +239,13 @@ const PointExplain = styled.h1`
 const PointRightExplain = styled.h1`
   width: 20vw;
   font-family: Pretendard-Regular;
-  font-size: 28px;
+  font-size: 17px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.56px;
-  text-align: left;
+  text-align: center;
   margin-block-start: 0.3em;
   color: #000;
   @media screen and (max-width: 1300px) {
@@ -265,13 +256,13 @@ const PointRightExplain = styled.h1`
 const PointFourthExplain = styled.h1`
   width: 20vw;
   font-family: Pretendard-Regular;
-  font-size: 28px;
+  font-size: 17px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.56px;
-  text-align: left;
+  text-align: center;
   margin-block-start: 0.3em;
   color: #000;
   @media screen and (max-width: 1300px) {

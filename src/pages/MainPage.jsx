@@ -1,5 +1,5 @@
 import React from "react";
-import {CopyToClipboard} from 'react-copy-to-clipboard';
+import { CopyToClipboard } from "react-copy-to-clipboard";
 import Header from "../components/Header";
 import styled from "styled-components";
 import ionic from "../assets/img/ionic.png";
@@ -8,7 +8,7 @@ import facebook from "../assets/img/facebook.svg";
 import github from "../assets/img/github.svg";
 
 function App() {
-  const url = 'cqrecore@gmail.com';
+  const url = "cqrecore@gmail.com";
   return (
     <div>
       <Header />
@@ -17,7 +17,7 @@ function App() {
           <SectionText>
             <SectionTextHigh>SCH</SectionTextHigh>
             <SectionTextHigh>Project Society</SectionTextHigh>
-            <SectionTextHigh>Core</SectionTextHigh>
+            <SectionTextHigh>Cqre</SectionTextHigh>
             <SectionTextLow>
               안녕하세요 순천향대학교 프로젝트 동아리 CQRE 입니다.
             </SectionTextLow>
@@ -46,8 +46,12 @@ function App() {
       </Section>
       <Footer>
         <FooterContainer>
-        <CopyToClipboard text={url} onCopy={() => alert('메일이 복사되었습니다')} style={{cursor:"pointer"}}>
-          <FooterIcon src={email} alt="email" />
+          <CopyToClipboard
+            text={url}
+            onCopy={() => alert("메일이 복사되었습니다")}
+            style={{ cursor: "pointer" }}
+          >
+            <FooterIcon src={email} alt="email" />
           </CopyToClipboard>
           <a href="https://github.com/SCH-CQRE" style={{ margin: "0 auto" }}>
             <FooterIcon src={github} alt="github" />

@@ -53,7 +53,6 @@ const DesktopHeaderLogoArea = styled.a`
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  margin-top: 5px;
   @media screen and (max-width: 1379px) {
     font-size: 28px;
   }

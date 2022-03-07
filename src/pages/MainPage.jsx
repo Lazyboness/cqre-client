@@ -40,9 +40,9 @@ function App() {
             </AboutButton>
           </SectionText>
         </SectionContainer>
-        <Image>
-          <img style={{ width: "30em" }} src={ionic} alt="ionic"></img>
-        </Image>
+        <ImageContainer>
+          <Image src={ionic} alt="ionic" />
+        </ImageContainer>
       </Section>
       <Footer>
         <FooterContainer>
@@ -73,19 +73,23 @@ function App() {
 
 const Section = styled.div`
   display: flex;
-  min-height: 80vh;
-  padding: 20vh 21vw 10vh 19vw;
+  min-height: 75vh;
+  padding: 10vh 21vw 15vh 19vw;
   box-sizing: border-box;
   font-size: calc(10px + 2vmin);
   color: white;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   background-color: #014880;
+  @media screen and (max-width: 500px){
+    padding: 5vh 10vw 4vh 10vw;
+  }
 `;
 
 const SectionContainer = styled.div`
   width: 30%;
   height: 150px;
   margin: 4px 0 0 13px;
+  margin-top:10vh
 `;
 const SectionText = styled.div`
   width: 100%;
@@ -97,6 +101,9 @@ const SectionText = styled.div`
 const SectionTextHigh = styled.div`
   font-size: 40px;
   font-family: Pretendard-SemiBold;
+  @media screen and (max-width: 1440px){
+    font-size: 30px;
+  }
 `;
 const SectionTextLow = styled.div`
   font-size: 25px;
@@ -143,7 +150,7 @@ const FooterIcon = styled.img`
   width: 25px;
 `;
 
-const Image = styled.div`
+const ImageContainer = styled.div`
   width: 20em;
   display: flex;
   margin-left: 14rem;
@@ -151,6 +158,14 @@ const Image = styled.div`
     display: none;
   }
 `;
+
+const Image = styled.img`
+width: 20em;
+@media screen and (max-width: 1440px) {
+  width: 15em;
+  height: 15em;
+}
+`
 
 const FooterText = styled.div`
   display: flex;

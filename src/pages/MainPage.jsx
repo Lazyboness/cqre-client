@@ -17,7 +17,7 @@ function App() {
           <SectionText>
             <SectionTextHigh>SCH</SectionTextHigh>
             <SectionTextHigh>Project Society</SectionTextHigh>
-            <SectionTextHigh>Cqre</SectionTextHigh>
+            <SectionTextHigh>CQRE</SectionTextHigh>
             <SectionTextLow>
               안녕하세요 순천향대학교 프로젝트 동아리 CQRE 입니다.
             </SectionTextLow>
@@ -67,6 +67,7 @@ function App() {
           Copyright CQRE Since 2022. All rights reserved CQRE
         </FooterText>
       </Footer>
+      <br />
     </div>
   );
 }

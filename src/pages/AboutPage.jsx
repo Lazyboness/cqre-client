@@ -120,7 +120,10 @@ const IntroduceLogo = styled.h1`
   margin-block-start: 0;
   margin-block-end: 0.3em;
   @media screen and (max-width: 1379px) {
-    font-size: 32px;
+    font-size: 36px;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 24px;
   }
 `;
 
@@ -136,6 +139,9 @@ const Explain = styled.h1`
   margin-block-end: 0;
   @media screen and (max-width: 1379px) {
     font-size: 12px;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 10px;
   }
 `;
 
@@ -157,7 +163,10 @@ const PointLogo = styled.h1`
   margin-block-start: 0;
   margin-block-end: 0.6em;
   @media screen and (max-width: 1379px) {
-    font-size: 32px;
+    font-size: 36px;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 24px;
   }
 `;
 
@@ -183,7 +192,7 @@ const PointTitleSection = styled.div`
 const PointLeftTitle = styled.h1`
   font-family: Pretendard-SemiBold;
   width: 20vw;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -208,7 +217,7 @@ const PointLeftTitle = styled.h1`
 const PointRightTitle = styled.h1`
   width: 20vw;
   font-family: Pretendard-SemiBold;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -246,12 +255,15 @@ const PointExplain = styled.h1`
   letter-spacing: -0.56px;
   text-align: center;
   margin-block-start: 0.3em;
+  margin-block-end: 2em;
   color: #000;
   @media screen and (max-width: 1300px) {
     font-size: 13px;
+    margin-block-end: 1em;
   }
   @media screen and (max-width: 800px) {
     font-size: 9px;
+    margin-block-end: 0.6em;
   }
 `;
 
@@ -266,12 +278,15 @@ const PointRightExplain = styled.h1`
   letter-spacing: -0.56px;
   text-align: center;
   margin-block-start: 0.3em;
+  margin-block-end: 2em;
   color: #000;
   @media screen and (max-width: 1300px) {
     font-size: 13px;
+    margin-block-end: 1em;
   }
   @media screen and (max-width: 800px) {
     font-size: 9px;
+    margin-block-end: 0.6em;
   }
 `;
 
@@ -286,12 +301,15 @@ const PointFourthExplain = styled.h1`
   letter-spacing: -0.56px;
   text-align: center;
   margin-block-start: 0.3em;
+  margin-block-end: 2em;
   color: #000;
   @media screen and (max-width: 1300px) {
     font-size: 13px;
+    margin-block-end: 1em;
   }
   @media screen and (max-width: 800px) {
     font-size: 9px;
+    margin-block-end: 0.6em;
   }
 `;
 
@@ -311,7 +329,10 @@ const ActivityLogo = styled.h1`
   letter-spacing: -1.12px;
   margin-block-start: 0;
   @media screen and (max-width: 1379px) {
-    font-size: 32px;
+    font-size: 36px;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 24px;
   }
 `;
 

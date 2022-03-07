@@ -90,7 +90,7 @@ const ApplyLogo = styled.h1`
 
 const Explain = styled.h1`
   font-family: Pretendard-Regular;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -114,7 +114,7 @@ const EligibilityLogo = styled.h1`
   margin-block-start: 0;
   margin-block-end: 0.3em;
   font-family: Pretendard-SemiBold;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -129,7 +129,7 @@ const EligibilityLogo = styled.h1`
 
 const EligibilityExplain = styled.h1`
   font-family: Pretendard-Regular;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -165,7 +165,7 @@ const RecruitmentLogo = styled.h1`
   margin-block-start: 0;
   margin-block-end: 0.3em;
   font-family: Pretendard-SemiBold;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
